@@ -4,7 +4,7 @@
     font-size: 14px;
     margin: 0;
     padding: 0;
-    /* transition: 0.32s; */
+    line-height: 1.5;
 }
 
 .d-flex {
@@ -27,6 +27,9 @@
     justify-content: center;
     align-items: center;
 }
+.align-center{
+    align-items: center;
+}
 
 .around {
     justify-content: space-around;
@@ -44,80 +47,112 @@
     justify-content: end;
 }
 
-.gap {
+.gap-10 {
     gap: 10px;
 }
+.gap-15 {
+    gap: 15px;
+}
 
+.margin-v-10{
+    margin: 10px 0;
+}
+.margin-v-20{
+    margin: 20px 0;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-abs {
+    position: absolute;
+}
 .container {}
 
 .menu {
     background-color: black;
-    
+    z-index: 1;
+}
+
+.left-side-menu{
+    width: 98%;
+}
+.left-side-menu>a{
+    font-family: Verdana, sans-serif;
 }
 
 .dropdown {
     position: relative;
-    display: inline-block;
-    margin-left: 10px;
-    /* margin: 0 24px; */
-    /* padding: 90px; */
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    /* background-color: #d57979; */
-    width: 100%;
+    width: 120%;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    /* padding: 10px; */
-    z-index: 1;
     margin-left: -16px;
-    margin-top: 8px; 
+    margin-top: 8px;  
 }
 .dropdown-content>a{
     display: block;
     width: 100%;
     text-decoration: none;
-    /* color: sandybrown; */
-    padding:0;
+    padding: 10px;
+    font-size: 16px;
 }
 .dropdown-content>a:hover {
     background-color: #ddd;
 }
 
-.pos-relative{
-    position: relative;
-}
-.pos-abs{
-    position: absolute;
-}
-
 .dropdown:hover .dropdown-content {
     display: block;
+    padding: 0;
     background-color: white;
     color: black;
 }
 button>span{
-    /* font-size: 16px; */
 }
 
-.img {
-    background-color: transparent;
+.right-side-menu{
+    float: right;
+        color: white;
+}
+#search-icon{
     width: 100%;
-    min-height: 650px;
+    text-align: center;
+    margin-right: 40px;
+    margin-top: 10px;
+}
+.right-side-menu:hover{
+    cursor: pointer;
+    background-color: #009688;
+}
+
+.div-img {
+    min-height: 350px;
+    max-height: 600px; 
+    
+}
+.div-img>img{
+    width: 100%;
     max-height: 600px;
-    background: url(./images/sailboat.jpg);
-    /* background-position: ; */
-    /* background-repeat: ; */
-    background-size: 100% 92.3%;
     z-index: -1;
 }
+.div-img>a{
+    text-decoration: none;
+}
+.div-img>a:hover{
+    cursor: pointer;
+}
 
-​ .team {}
+​ .team>span{
+    font-weight: bold;
+font-size: 30px;
+}
 
 .avatar {
     width: 100%;
-    padding: 20px 100px;
 }
 
 .team h2 {
@@ -129,15 +164,15 @@ button>span{
 
 .team p {
     font-size: 16px;
+    padding-bottom: 50px;
 }
 
 .man {
-    display: inline-block;
     width: 100%;
 }
 
 .man>img {
-    width: 50%;
+    width: 45%;
     border-radius: 100%;
 }
 
@@ -145,12 +180,45 @@ button>span{
 .man>p {
     margin-top: 12px;
     font-size: larger;
+    font-family: Verdana,sans-serif;
 }
 
 .work {
     background-color: #333333;
     width: 100%;
+padding: 70px 0;
+}
+.work h1{
+    font-size: 30px;
+    color: white;
+}
+.work span{
+    font-size: 16px;
+    color: white;
+}
 
+.expl{
+    background-color: white;
+}
+.for-padding{
+    padding: 0 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+h2 {
+    font-size: 30px;
+}
+h3 {
+    font-size: 24px;
 }
 
 .price {}
@@ -160,7 +228,6 @@ button>span{
 .footer {}
 
 .btn {
-    /* width: 80px; */
     border: none;
     background-color: transparent;
     color: white;
@@ -169,38 +236,36 @@ button>span{
     font-size: 16px;
     padding: 8px 16px;
     font-weight: 100;
-    /* margin-right: 10px; */
-}
-.btn-menu{
-    
+    font-family: Verdana, sans-serif;
+    text-decoration: none;
 }
 
 .btn:hover {
         background-color: #dfdfdf;
     color: black;
-
 }
 .fa{
-    font: normal normal normal 14px/1 FontAwesome;
-    margin-right: 10px;
+    transition-property: 0;
 }
 
 #btn-img {
     color: white;
-    /* margin-bottom: 1%;
-    margin-left: 1%; */
     background-color: black;
     width: 220px;
-    padding: 12px 4px;
     font-size: 24px;
-    top: 82%;
+    top: 88.9%;
     left: 1%;
     font-weight: 100;
-    font-family: Verdana, Geneva, Tahoma, sans-serif
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    text-align: center;
+    z-index: 0;
+    
 }
 
 #btn-img:hover {
     background-color: #009688;
+    cursor: pointer;
 }
 
 #logo {
@@ -209,7 +274,9 @@ button>span{
 
 #logo:hover {
     background-color: #e2e3e3;
+    
 }
+
 
 
 
@@ -265,9 +332,9 @@ button>span{
 }
 
 @media only screen and (min-width: 600px) {
-    * {
+    /* * {
         transition: 0.32s;
-    }
+    } */
 
 
     /* For small screens: */
@@ -292,7 +359,7 @@ button>span{
     }
 
     .col-sm-6 {
-        width: 49%;
+        width: 50%;
     }
 
     .col-sm-7 {
@@ -335,11 +402,11 @@ button>span{
     }
 
     .col-md-3 {
-        width: 22%;
+        width: 25%;
     }
 
     .col-md-4 {
-        width: 32.2%;
+        width: 33.33%;
     }
 
     .col-md-5 {
@@ -390,11 +457,11 @@ button>span{
     }
 
     .col-ld-3 {
-        width: 24%;
+        width: 25%;
     }
 
     .col-ld-4 {
-        width: 32.2%;
+        width: 33.33%;
     }
 
     .col-ld-5 {

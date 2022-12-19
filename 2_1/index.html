@@ -16,14 +16,14 @@
 <body>
     <div class="container col-12 d-flex dir-col ">
         <div class="menu col-12 d-flex dir-row fixed">
-            <div>
-                <button class="btn" id="logo"><i class="fa fa-home"></i>&nbsp;Logo</button>
-                <a class="btn btn-menu">Team</a>
-                <a class="btn btn-menu">Work</a>
-                <a class="btn btn-menu">Price</a>
-                <a class="btn btn-menu">Contact</a>
+            <div class="left-side-menu">
+                <button class="btn" id="logo"><i class="fa fa-home"></i>&nbsp; Logo</button>
+                <a href="#team" class="btn">Team</a>
+                <a href="#work" class="btn">Work</a>
+                <a href="#" class="btn">Price</a>
+                <a href="#" class="btn">Contact</a>
                 <div class="dropdown btn">
-                    Dropdown &nbsp;<i class="fa fa-caret-down"></i>
+                    Dropdown&nbsp;<i class="fa fa-caret-down"></i>
                     <ul class="dropdown-content btn">
                         <a>Link</a>
                         <a>Link</a>
@@ -31,52 +31,53 @@
                     </ul>
                 </div>
             </div>
+            <div class="right-side-menu"><i class="fa fa-search" id="search-icon"></i></div>
         </div>
-        <div class="img col-12 pos-relative">
-            <button class="btn pos-abs" id="btn-img">LEARN W3.CSS</button>
+        <div class="div-img col-12 pos-relative">
+            <img src="./images/sailboat.jpg" alt="sailboat">
+            <a href="#" class="btn pos-abs" id="btn-img">LEARN W3.CSS</a>
         </div>
-        <div class="team col-12 d-flex center dir-col"><br>
+        <div class="team col-12 d-flex  dir-col align-center" id="team"><br>
             <h2>OUR TEAM</h2>
+            <span>Meet the team - our office rats:</span>
             <br />
-            <p>Meet the team - our office rats:</p>
-            <br />
-            <div class="avatar d-flex around">
-                <div class="man d-flex center dir-col">
+            <div class="avatar d-flex center align-center">
+                <div class="man col-3 d-flex center dir-col">
                     <img src="./images/avatar.jpg" alt="Boss">
                     <h3>Johnny Walker</h3>
                     <p>Web Designer</p>
                 </div>
 
-                <div class="man d-flex center dir-col">
+                <div class="man col-3 d-flex center dir-col">
                     <img src="./images/avatar.jpg" alt="Boss">
                     <h3>Rebecca Flex</h3>
                     <p>Support</p>
                 </div>
 
-                <div class="man d-flex center dir-col">
+                <div class="man col-3 d-flex center dir-col">
                     <img src="./images/avatar.jpg" alt="Boss">
                     <h3>Jan Ringo</h3>
                     <p>Boss man</p>
                 </div>
 
-                <div class="man d-flex center dir-col">
+                <div class="man col-3 d-flex center dir-col">
                     <img src="./images/avatar.jpg" alt="Boss">
                     <h3>Kai Ringo</h3>
                     <p>Fixer</p>
                 </div>
             </div>
         </div>
-        <div class="work col-12 d-flex around">
-            <div class="text col-3 pad-10">
-                <h1>Our Work</h1>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, fuga expedita, explicabo labore
-                exercitationem dicta ut nisi, numquam atque ex consequuntur repellat assumenda? Accusantium reiciendis a
-                commodi, quisquam nobis eligendi!
+        <div class="work col-12 d-flex" id="work">
+            <div class="for-padding col-3 ">
+                <div class="textpad-10">
+                    <h1>Our Work</h1>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nesciunt quae! Repellat, assumenda quis consectetur iusto dolores optio voluptates ipsam, ducimus eum accusantium iure amet perspiciatis ad repudiandae eveniet voluptatum. Rem expedita ratione nihil, velit harum quae eligendi quibusdam. Dignissimos vel ab sunt harum sed! Hic inventore dolorum dolorem unde, architecto id eaque, nihil at, cupiditate repellendus ut facere neque.</span>
+                </div>
             </div>
-            <div class="text col-3">
-                <div class="w3-card w3-white">
-                    <img src="/w3images/snow.jpg" alt="Snow" style="width:100%">
-                    <div class="w3-container">
+            <div class="for-padding col-3">
+                <div class="img-with-expl">
+                    <img src="./images/snow.jpg" alt="Snow" style="width:100%">
+                    <div class="expl">
                         <h3>Customer 1</h3>
                         <h4>Trade</h4>
                         <p>Blablabla</p>
@@ -86,30 +87,52 @@
                     </div>
                 </div>
             </div>
-            <div class="text col-3"><img src="/w3images/snow.jpg" alt="Snow" style="width:100%">
-                <div class="w3-container">
-                    <h3>Customer 1</h3>
-                    <h4>Trade</h4>
-                    <p>Blablabla</p>
-                    <p>Blablabla</p>
-                    <p>Blablabla</p>
-                    <p>Blablabla</p>
+            <div class="for-padding col-3">
+                <div class="img-with-expl">
+                    <img src="./images/lights.jpg" alt="Snow" style="width:100%">
+                    <div class="expl">
+                        <h3>Customer 1</h3>
+                        <h4>Trade</h4>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                    </div>
+                </div>
+            </div>
+            <div class="for-padding col-3">
+                <div class="text"><img src="./images/mountains.jpg" alt="Snow" style="width:100%">
+                    <div class="expl">
+                        <h3>Customer 1</h3>
+                        <h4>Trade</h4>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                        <p>Blablabla</p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="text col-3"><img src="/w3images/snow.jpg" alt="Snow" style="width:100%">
-            <div class="w3-container">
-                <h3>Customer 1</h3>
-                <h4>Trade</h4>
-                <p>Blablabla</p>
-                <p>Blablabla</p>
-                <p>Blablabla</p>
-                <p>Blablabla</p>
-            </div>
-        </div>
+        
     </div>
     <div class="price">header</div>
     <div class="contact">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
+    <div class="footer">header</div>
     <div class="footer">header</div>
     </div>
 </body>
