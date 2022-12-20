@@ -15,9 +15,9 @@
 
 <body>
     <div class="container col-12 d-flex dir-col ">
-        <nav class="nav">
-            <div class="close">
-                <a href="#">
+        <nav class="nav animate d-flex dir-col around" id="nav-bar">
+            <div class="close col-6" id="close">
+                <a onclick="closeNavBar()">
                     Close <i class="fa fa-remove"></i>
                 </a>
             </div>
@@ -35,8 +35,8 @@
                 <a href="#team" class="btn">Team</a>
                 <a href="#work" class="btn">Work</a>
                 <a href="#price" class="btn">Price</a>
-                <a href="#" class="btn">Contact</a>
-                <div class="dropdown btn">
+                <a href="#contact-us" class="btn">Contact</a>
+                <div class="dropdown btn" id="dropdown">
                     Dropdown&nbsp;<i class="fa fa-caret-down"></i>
                     <ul class="dropdown-content btn">
                         <a>Link</a>
@@ -127,7 +127,7 @@
             </div>
         </div>
         <div class="plus-btn">
-            <a href="#" id="round-btn">+</a>
+            <a id="round-btn" onclick="openNavBar()">+</a>
         </div>
         <div class="price col-12 d-flex dir-col align-center" id="price">
             <h2>PRICING</h2>
@@ -148,9 +148,9 @@
                                 <h2><i class="fa fa-usd"></i> &nbsp10</h2>
                                 <span>per month</span>
                             </li>
-                            <li id="li-btn">
-                                <button><i class="fa fa-check"></i> Sign
-                                    Up</button>
+                            <li class="li-btn">
+                                <a class="btn-signup"><i class="fa fa-check"></i> Sign
+                                    Up</a>
                             </li>
                         </ul>
                     </div>
@@ -166,12 +166,12 @@
                             <li><b>25</b> Domains</li>
                             <li><b>Endless</b> Support</li>
                             <li>
-                                <h2><i class="fa fa-usd"></i> &nbsp25</h2>
+                                <h2><i class="fa fa-usd"></i> &nbsp;25</h2>
                                 <span>per month</span>
                             </li>
-                            <li id="li-btn">
-                                <button><i class="fa fa-check"></i> Sign
-                                    Up</button>
+                            <li class="li-btn">
+                                <a class="btn-signup"><i class="fa fa-check"></i> Sign
+                                    Up</a>
                             </li>
                         </ul>
                     </div>
@@ -190,21 +190,21 @@
                                 <h2><i class="fa fa-usd"></i> &nbsp;50</h2>
                                 <span>per month</span>
                             </li>
-                            <li id="li-btn">
-                                <button><i class="fa fa-check"></i> Sign
-                                    Up</button>
+                            <li class="li-btn">
+                                <a class="btn-signup"><i class="fa fa-check"></i> Sign
+                                    Up</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                
-                
+
+
             </div>
         </div>
     </div>
-    <div class="price">header</div>
-    <div class="contact">header</div>
-    <div class="footer">header</div>
+    <!-- <div class="price">header</div>
+    <div class="contact">header</div> -->
+    <div class="contact-us" id="contact-us">header</div>
     <div class="footer">header</div>
     <div class="footer">header</div>
     <div class="footer">header</div>
