@@ -71,7 +71,7 @@
 .pos-abs {
     position: absolute;
 }
-.container {}
+
 
 .menu {
     background-color: black;
@@ -179,10 +179,13 @@ font-size: 30px;
     border-radius: 100%;
 }
 
-.man>h3,
+.man>h3{
+    font-size: 24px;
+    margin-top: 10px;
+}
 .man>p {
-    margin-top: 12px;
-    font-size: larger;
+    margin-top: 6px;
+    font-size: 16px;
     /* font-family: Verdana,sans-serif; */
 }
 
@@ -205,7 +208,7 @@ padding: 70px 0;
     padding: 10px 16px;
 }
 .expl p{
-padding: 6px 0;
+padding:  0;
 /* font-family: Verdana, sans-serif; */
 }
 .expl h4{
@@ -215,7 +218,7 @@ font-size: 20px;
     margin-top: 0;
 }
 .for-padding{
-    padding: 0 10px;
+    padding: 0 20px;
     line-height: 0;
 }
 
@@ -296,17 +299,22 @@ h3 {
 
 #round-btn{
     position: absolute;
-    width: 46px;
+    width: 50px;
     text-align: center;
     color: white;
-        top: -25px;
+        top: -26px;
         right: 30px;
         background-color: #009688;
         cursor: pointer;
-        border-radius: 50%;
-        font-size: 30px;
+        border-radius: 60%;
+        font-size: 22px;
         text-decoration: none;
-        font-weight: 100;
+        font-weight: 400;
+        padding: 9px;
+}
+#round-hover{
+    position: absolute;
+    
 }
 .plus-btn{
     position: relative;
@@ -356,6 +364,73 @@ li button{
 .shadow:hover{
     box-shadow:8px 6px 6px #eaeaea;
 }
+
+.textpad h1{
+    margin-bottom: 24px;
+}
+.textpad span{
+    margin-bottom: 24px;
+    /* margin-left: 10px 30px; */
+}
+
+.nav{
+    width: 300px;
+    position: fixed;
+    float: left;
+    background-color: white;
+    padding:6px 20px;
+    z-index: 2;
+    height: 100vh;
+    /* display: none; */
+    color: blue;
+}
+.nav a{
+    color: #009688;
+    text-decoration: none;
+    font-size: 36px;
+    float: right;
+}
+.fa-remove{
+    font-size: 40px;
+    font-weight: bold;
+}
+.links{
+    margin-top: 140px;
+}
+.links a{
+    float: left;
+    text-align: left;
+    font-size: 36px;
+    width: 100%;
+    color: black;
+}
+.link{
+    float: left;
+    color: black;
+    margin-top: 20px;
+}
+.close a i{
+    cursor: pointer;
+    position: absolute;
+    margin-top: 9px;
+    right: -34px;
+}
+.close a{
+    cursor: pointer;
+    position: absolute;
+    margin-top: 10px;
+    right: 60px;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
