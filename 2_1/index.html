@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container col-12 d-flex dir-col ">
+    <div class="container col-12 d-flex dir-col " id="my-page">
         <nav class="nav animate d-flex dir-col around" id="nav-bar">
             <div class="close col-6" id="close">
                 <a onclick="closeNavBar()">
@@ -51,38 +51,38 @@
             <img src="./images/sailboat.jpg" alt="sailboat">
             <a href="#" class="btn pos-abs" id="btn-img">LEARN W3.CSS</a>
         </div>
-        <div class="team col-12 d-flex  dir-col align-center" id="team"><br>
+        <div class="team col-12 d-flex dir-col align-center" id="team"><br>
             <h2>OUR TEAM</h2>
             <span>Meet the team - our office rats:</span>
             <br />
-            <div class="avatar d-flex center align-center">
-                <div class="man col-3 d-flex center dir-col">
+            <div class="avatar dir-row wrap d-flex center align-center">
+                <div class="man col-md-3 d-flex center dir-col">
                     <img src="./images/avatar.jpg" alt="Boss">
                     <h3>Johnny Walker</h3>
                     <p>Web Designer</p>
                 </div>
 
-                <div class="man col-3 d-flex center dir-col">
+                <div class="man col-md-3 d-flex center dir-col">
                     <img src="./images/avatar.jpg" alt="Boss">
                     <h3>Rebecca Flex</h3>
                     <p>Support</p>
                 </div>
 
-                <div class="man col-3 d-flex center dir-col">
+                <div class="man col-md-3 d-flex center dir-col">
                     <img src="./images/avatar.jpg" alt="Boss">
                     <h3>Jan Ringo</h3>
                     <p>Boss man</p>
                 </div>
 
-                <div class="man col-3 d-flex center dir-col">
+                <div class="man col-md-3 d-flex center dir-col">
                     <img src="./images/avatar.jpg" alt="Boss">
                     <h3>Kai Ringo</h3>
                     <p>Fixer</p>
                 </div>
             </div>
         </div>
-        <div class="work col-12 d-flex" id="work">
-            <div class="for-padding col-3">
+        <div class="work col-12  col-md-12 d-flex dir-row wrap" id="work">
+            <div class="for-padding col-md-3 col-12">
                 <div class="textpad">
                     <h1>Our Work</h1>
                     <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, nesciunt quae! Repellat,
@@ -92,7 +92,7 @@
                         architecto id eaque, nihil at, cupiditate repellendus ut facere neque.</span>
                 </div>
             </div>
-            <div class="for-padding col-3">
+            <div class="for-padding col-md-3 col-12">
                 <img src="./images/snow.jpg" alt="Snow" style="width:100%">
                 <div class="expl">
                     <h3>Customer 1</h3>
@@ -103,7 +103,7 @@
                     <p>Blablabla</p>
                 </div>
             </div>
-            <div class="for-padding col-3">
+            <div class="for-padding col-md-3 col-12">
                 <img src="./images/lights.jpg" alt="Snow" style="width:100%">
                 <div class="expl">
                     <h3>Customer 2</h3>
@@ -114,7 +114,7 @@
                     <p>Blablabla</p>
                 </div>
             </div>
-            <div class="for-padding col-3">
+            <div class="for-padding col-md-3 col-12">
                 <img src="./images/mountains.jpg" alt="Snow" style="width:100%">
                 <div class="expl">
                     <h3>Customer 3</h3>
@@ -202,8 +202,6 @@
             </div>
         </div>
     </div>
-    <!-- <div class="price">header</div>
-    <div class="contact">header</div> -->
     <div class="contact col-12 d-flex dir-row wrap" id="contact">
         <div class="contact-left col-12 col-md-5 d-flex dir-col">
             <span id="span-contact">
@@ -212,9 +210,9 @@
             <br />
             <span id="address">Address</span>
             <span>Swing by for a cup of coffee, or whatever</span>
-            <span><i class="fa fa-map-marker" ></i> &nbsp;Chicago, US</span>
-            <span><i class="fa fa-phone" ></i>   +00 1515151515</span>
-            <span><i class="fa fa-envelope-o" ></i>&nbsp;test@test.com</span>
+            <span><i class="fa fa-map-marker"></i> &nbsp;Chicago, US</span>
+            <span><i class="fa fa-phone"></i> +00 1515151515</span>
+            <span><i class="fa fa-envelope-o"></i>&nbsp;test@test.com</span>
         </div>
         <div class="contact-right col-12 col-md-7 d-flex dir-col">
             <form>
@@ -235,23 +233,29 @@
             </form>
         </div>
     </div>
-    <img src="./images/map.jpg" class="down-img col-12"></img>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
-    <div class="footer">header</div>
+    <div class="down-img-div"><img src="./images/map.jpg" class="down-img col-12"></img></div>
+    <div class="footer col-12 d-flex dir-row">
+        <div class="footer-left">
+            <h4>Follow Us</h4>
+            <a class="footer-link" href="#"><i class="fa fa-facebook"></i></a>
+            <a class="footer-link" href="#"><i class="fa fa-twitter"></i></a>
+            <a class="footer-link" href="#"><i class="fa fa-google-plus"></i></a>
+            <a class="footer-link" href="#"><i class="fa fa-instagram"></i></a>
+            <a class="footer-link" href="#"><i class="fa fa-linkedin-square"></i></a>
+            <br />
+            <br />
+            <span>Powered by <a href="https://www.w3schools.com/w3css/default.asp">w3.css</a>sss</span>
+        </div>
+        <div class="footer-right">
+           
+            <a href="#my-page">
+                <i class="fa fa-chevron-circle-up" id="arrow-top"></i>
+                </a>
+            <span> <a href="#">Go To Top</a></span>
+        </div>
+    </div>
+
+
     <script src="script.js"></script>
 </body>
 
