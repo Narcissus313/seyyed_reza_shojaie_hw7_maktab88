@@ -616,7 +616,6 @@ form input {
 
 .footer-left {
     width: 80%;
-    /* margin-left: 220px; */
 }
 
 .footer-right {
@@ -635,9 +634,6 @@ form input {
     width: 120px;
 }
 
-.footer a {
-    text-decoration: none;
-}
 
 .footer-right span a {
     color: white;
@@ -658,15 +654,6 @@ form input {
     padding: 10px 0;
     text-align: center;
 }
-
-
-
-
-
-
-
-
-
 
 
 
