@@ -237,7 +237,7 @@ button>span {}
 
 .for-padding {
     line-height: 0;
-    padding: 0 20px;
+    padding: 10px 20px;
 }
 
 h1,
@@ -531,7 +531,7 @@ form {
     background-color: white;
     padding: 0px 20px;
     padding-top: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 15px;
     margin-right: 30px;
     width: 100%;
     box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
@@ -602,6 +602,7 @@ form input {
     margin: 4px;
     color: white;
     margin-right: 0;
+    display: inline-block;
 }
 
 .footer .footer-link:hover {
@@ -615,7 +616,7 @@ form input {
 
 .footer-left {
     width: 80%;
-    padding-left: 220px;
+    /* margin-left: 220px; */
 }
 
 .footer-right {
@@ -721,9 +722,6 @@ form input {
 }
 
 @media only screen and (min-width: 600px) {
-    /* * {
-        transition: 0.32s;
-    } */
 
 
     /* For small screens: */
@@ -772,116 +770,6 @@ form input {
     }
 
     .col-sm-12 {
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 800px) {
-    /* * {
-        transition: 0.32s;
-    } */
-
-    /* For medium desktop: */
-    .col-md-1 {
-        width: 8.33%;
-    }
-
-    .col-md-2 {
-        width: 16.66%;
-    }
-
-    .col-md-3 {
-        width: 25%;
-    }
-
-    .col-md-4 {
-        width: 33.33%;
-    }
-
-    .col-md-5 {
-        width: 41.66%;
-    }
-
-    .col-md-6 {
-        width: 50%;
-    }
-
-    .col-md-7 {
-        width: 58.33%;
-    }
-
-    .col-md-8 {
-        width: 66.66%;
-    }
-
-    .col-md-9 {
-        width: 75%;
-    }
-
-    .col-md-10 {
-        width: 83.33%;
-    }
-
-    .col-md-11 {
-        width: 91.66%;
-    }
-
-    .col-md-12 {
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width: 1000px) {
-    /* * {
-        transition: 0.32s;
-    } */
-
-    /* For large desktop: */
-    .col-ld-1 {
-        width: 8.33%;
-    }
-
-    .col-ld-2 {
-        width: 16.66%;
-    }
-
-    .col-ld-3 {
-        width: 25%;
-    }
-
-    .col-ld-4 {
-        width: 33.33%;
-    }
-
-    .col-ld-5 {
-        width: 41.66%;
-    }
-
-    .col-ld-6 {
-        width: 50%;
-    }
-
-    .col-ld-7 {
-        width: 58.33%;
-    }
-
-    .col-ld-8 {
-        width: 66.66%;
-    }
-
-    .col-ld-9 {
-        width: 75%;
-    }
-
-    .col-ld-10 {
-        width: 83.33%;
-    }
-
-    .col-ld-11 {
-        width: 91.66%;
-    }
-
-    .col-ld-12 {
         width: 100%;
     }
 }
