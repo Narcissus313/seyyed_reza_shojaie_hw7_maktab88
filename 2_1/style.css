@@ -193,6 +193,10 @@ button>span {}
     width: 45%;
 }
 
+.man>img:hover {
+    opacity: 0.5;
+}
+
 .man>h3 {
     margin-top: 10px;
 }
@@ -626,7 +630,7 @@ form input {
     top: 54px;
 }
 
-.footer-right a{
+.footer-right a {
     text-decoration: none;
 }
 
