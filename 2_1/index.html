@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container col-12 d-flex dir-col " id="my-page">
+    <div class="container col-12 d-flex dir-col">
         <nav class="nav animate d-flex dir-col around" id="nav-bar">
             <div class="close col-6" id="close">
                 <a onclick="closeNavBar()">
@@ -30,26 +30,24 @@
             </div>
         </nav>
         <div class="menu col-12 d-flex dir-row fixed">
-            <div class="left-side-menu">
-                <button class="btn" id="logo"><i class="fa fa-home" aria-hidden="true"></i>&nbsp; Logo</button>
-                <a href="#team" class="btn">Team</a>
-                <a href="#work" class="btn">Work</a>
-                <a href="#price" class="btn">Price</a>
-                <a href="#contact" class="btn">Contact</a>
-                <div class="dropdown btn" id="dropdown">
-                    Dropdown&nbsp;<i class="fa fa-caret-down"></i>
-                    <ul class="dropdown-content btn">
-                        <a>Link</a>
-                        <a>Link</a>
-                        <a>Link</a>
-                    </ul>
-                </div>
+            <button class="btn" id="logo"><i class="fa fa-home" aria-hidden="true"></i>&nbsp; Logo</button>
+            <a href="#team" class="btn">Team</a>
+            <a href="#work" class="btn">Work</a>
+            <a href="#price" class="btn">Price</a>
+            <a href="#contact" class="btn">Contact</a>
+            <div class="dropdown btn" id="dropdown">
+                Dropdown&nbsp;<i class="fa fa-caret-down"></i>
+                <ul class="dropdown-content btn">
+                    <a>Link</a>
+                    <a>Link</a>
+                    <a>Link</a>
+                </ul>
             </div>
-            <div class="right-side-menu"><i class="fa fa-search" id="search-icon"></i></div>
+            <i class="fa fa-search" id="search-icon"></i>
         </div>
         <div class="div-img col-12 pos-relative">
             <img src="./images/sailboat.jpg" alt="sailboat">
-            <a href="#" class="btn pos-abs" id="btn-img">LEARN W3.CSS</a>
+            <a class="btn pos-abs" id="btn-img" onclick="openModal()">LEARN W3.CSS</a>
         </div>
         <div class="team col-12 d-flex dir-col align-center" id="team"><br>
             <h2>OUR TEAM</h2>
@@ -248,14 +246,29 @@
         </div>
         <div class="footer-right">
 
-            <a href="#my-page">
+            <a href="#">
                 <i class="fa fa-chevron-circle-up" id="arrow-top"></i>
             </a>
             <span> <a href="#">Go To Top</a></span>
         </div>
     </div>
-
-
+    <div class="modal" id="modal">
+        <div class="modal-container">
+            <div class="modal-header">
+                <span id="close-modal" onclick="closeModal()">&times;</span>
+                <p>Oh snap! We just showed you a modal..</p>
+                <p>Because we can <i class="fa fa-smile"></i></p>
+            </div>
+            <div class="modal-middle">
+                <p>Cool huh? Ok, enough teasing around..</p>
+                <br />
+                <p>Go to our <a href="#">W3.CSS Tutorial</a> to learn more!.</p>
+            </div>
+            <div class="modal-footer">
+                <span>Modal footer</span>
+            </div>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 
